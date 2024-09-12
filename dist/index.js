@@ -28943,7 +28943,7 @@ function run() {
         ACL: 'public-read',
         Body: fileStream,
         Key: bucketPath,
-        ContentType: lookup(p.path) || 'text/plain',
+        ContentType: lookup(p.path) || 'application/octet-stream',
       };
       return upload(params);
     })
